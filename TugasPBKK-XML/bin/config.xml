@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+    <bean id="matkulku" class = "modis.model.PBKK"></bean>
+    
+    <bean id="diriku" class="modis.model.Mahasiswa">
+			<constructor-arg ref="matkulku"></constructor-arg> 
+			<property name="nama" value="Modista Garsia"></property>
+	    	<property name="nrp" value="5116100031"></property>
+	    	<property name="email" value="garsiamodista@gmail.com"></property>
+	    	<property name="nohp" value="081330515755"></property>
+			
+	</bean>
+        
+</beans>
